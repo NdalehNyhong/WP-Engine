@@ -1,0 +1,203 @@
+body {
+    background-image: linear-gradient(to bottom right, black, #3e97e9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0.966);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-content: center;
+}
+
+.logo {
+    transform: scale(70%);
+}
+
+.home {
+    align-self: center;
+}
+
+.name, .home {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    font-size: 60px; 
+    text-align: center;
+}
+
+.name {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 900;
+    align-self: center;
+    font-size: xx-large;
+}
+
+#home:hover {
+    animation-name: home;
+    color: #3e97e9;
+    transform: scale(140%);
+    animation-duration: 0.75s;
+}
+
+@keyframes home {
+    from {
+        transform: scale(100%);
+    }
+    to {
+        transform: scale(140%);
+    }
+}
+
+.name {
+    text-shadow: 2px 2px 3px grey;
+}
+
+.buttons {
+    height: 500px;
+    margin: 50px 200px 50px 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.button1, .button2 {
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: none;
+    margin: 30px;
+    font-size: xx-large;
+    border-radius: 40px;
+    background-color: #3e97e9;
+    color: white;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 1px;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 .span1:after, .button2 .span2:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button1:hover .span1, .button2:hover .span2 {
+    padding-right: 50px;
+}
+
+.button1:hover .span1:after, .button2:hover .span2:after {
+    opacity: 1;
+    right: 0;
+} 
+
+.generator {
+    height: 500px;
+    margin: 50px 200px 50px 200px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-content: center;
+    justify-content: center;
+}
+
+.generatedPassword, .checkedPassword {
+    background-color: white;
+    color: #3e97e9;
+    border: thick solid #3e97e9;
+}
+
+.generateButton, .checkButton {
+    border: none;
+    background-color: #3e97e9;
+    color: white;
+    cursor: pointer;
+}
+
+.generateButton, .generatedPassword, .checkButton, .checkedPassword {
+    padding: 30px;
+    margin: 50px;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 20px;
+}
+
+.checkButton, .checkedPassword {
+    margin-bottom: 10px;
+}
+
+.checker {
+    height: 500px;
+    margin: 50px 200px 50px 200px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+    align-content: center;
+}
+
+.criteria {
+    font-size: xx-large;
+    list-style-type: none;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.tick {
+    color: green;
+}
+
+li {
+    margin: 10px;
+}
+
+footer {
+    background-image: linear-gradient(to top left, black, #3e97e9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0.966);
+}
+
+.footercontainer {
+    color: #111;
+    width: 100%;
+}
+
+.footerbottom {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    padding: 8px;
+}
+
+.footernav{
+    display: flex;
+    margin-left: 500px;
+    text-decoration: none;
+}
+
+.footernav ul {
+    text-decoration: none;
+    display: flex;
+}
+
+.footernav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover {
+    opacity: 1;
+}
